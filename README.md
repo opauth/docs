@@ -1,9 +1,15 @@
-Documentation for Opauth
+API Documentation for Opauth
 ===========
 
-See Documentation for Opauth at: http://uzyn.github.com/opauth-docs/
+See API documentation for Opauth at: http://uzyn.github.com/opauth-docs/
 
 Documentation is generated correct to the version of [Opauth][1] submoduled in this repository.
+
+If you are looking for non-API documentation (how to use Opauth), check out the following:
+
+- [opauth.org](http://opauth.org/)
+- [Opauth's wiki](https://github.com/uzyn/opauth/wiki)
+- [Opauth on GitHub](https://github.com/uzyn/opauth/)
 
 About Opauth
 ------------
