@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a3" title="Opauth">
+  <file path="Opauth.php" hash="f5532ded574b2e6f04e876cbabbced0c" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file Opauth.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="12" package="Opauth">
+      <name>Opauth</name>
+      <full_name>\Opauth</full_name>
+      <extends/>
+      <docblock line="2">
+        <description><![CDATA[Opauth
+Multi-provider authentication framework for PHP]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="2" name="copyright" description="Copyright © 2012 U-Zyn Chua (http://uzyn.com)"/>
+        <tag line="2" name="link" description="http://opauth.org" link="http://opauth.org"/>
+        <tag line="2" name="package" description="Opauth"/>
+        <tag line="2" name="license" description="MIT License"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="18" package="Default">
+        <name>$config</name>
+        <default><![CDATA[]]></default>
+        <docblock line="13">
+          <description><![CDATA[User configuraable settings
+Refer to example/opauth.conf.php.default or example/opauth.conf.php.advanced for sample
+More info: https://github.com/uzyn/opauth/wiki/Opauth-configuration]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="23" package="Default">
+        <name>$env</name>
+        <default><![CDATA[]]></default>
+        <docblock line="20">
+          <description><![CDATA[Environment variables]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="28" package="Default">
+        <name>$strategyMap</name>
+        <default><![CDATA[]]></default>
+        <docblock line="25">
+          <description><![CDATA[Strategy map: for mapping URL-friendly name to Class name]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="37" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="30">
+          <description><![CDATA[Constructor
+Loads user configuration and strategies.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="30" name="param" description="array User configuration" type="\$config" variable="$config">
+            <type by_reference="false">\$config</type>
+          </tag>
+          <tag line="30" name="param" description="boolean Whether Opauth should auto run after initialization." type="\$run" variable="$run">
+            <type by_reference="false">\$run</type>
+          </tag>
+        </docblock>
+        <argument line="37">
+          <name>$config</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+        <argument line="37">
+          <name>$run</name>
+          <default><![CDATA[true]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="86" package="">
+        <name>run</name>
+        <type>function</type>
+        <docblock line="82">
+          <description><![CDATA[Run Opauth:
+Parses request URI and perform defined authentication actions based based on it.]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="113" package="">
+        <name>parseUri</name>
+        <type>function</type>
+        <docblock line="110">
+          <description><![CDATA[Parses Request URI]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="129" package="">
+        <name>loadStrategies</name>
+        <type>function</type>
+        <docblock line="126">
+          <description><![CDATA[Load strategies from user-input $config]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="165" package="">
+        <name>envReplace</name>
+        <type>function</type>
+        <docblock line="158">
+          <description><![CDATA[Replace defined env values enclused in {} with values from $dictionary]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="158" name="param" description="string Input string" type="\$value" variable="$value">
+            <type by_reference="false">\$value</type>
+          </tag>
+          <tag line="158" name="param" description="array Dictionary to lookup values from, defaulted to $this-&gt;env" type="\$dictionary" variable="$dictionary">
+            <type by_reference="false">\$dictionary</type>
+          </tag>
+          <tag line="158" name="return" description="String substitued with value from dictionary, if applicable" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="165">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="165">
+          <name>$dictionary</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="191" package="">
+        <name>validate</name>
+        <type>function</type>
+        <docblock line="181">
+          <description><![CDATA[Validate $auth response
+Accepts either function call or HTTP-based call]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="181" name="param" description="= sha1(print_r($auth, true))" type="string" variable="$input">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="181" name="param" description="= $_REQUEST['timestamp'])" type="string" variable="$timestamp">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="181" name="param" description="= $_REQUEST['signature']" type="string" variable="$signature">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="181" name="param" description="Sets reason for failure if validation fails" type="\$reason" variable="$reason">
+            <type by_reference="false">\$reason</type>
+          </tag>
+          <tag line="181" name="return" description="true: valid; false: not valid." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="191">
+          <name>$input</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="191">
+          <name>$timestamp</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="191">
+          <name>$signature</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="191">
+          <name>$reason</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="222" package="">
+        <name>callback</name>
+        <type>function</type>
+        <docblock line="217">
+          <description><![CDATA[Callback: prints out $auth values, and acts as a guide on Opauth security
+Application should redirect callback URL to application-side.]]></description>
+          <long-description><![CDATA[Refer to example/callback.php on how to handle auth callback.]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="280" package="">
+        <name>debug</name>
+        <type>function</type>
+        <docblock line="274">
+          <description><![CDATA[Prints out variable with <pre> tags
+Silence if Opauth is not in debug mode]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="274" name="param" description="mixed Object or variable to be printed" type="\$var" variable="$var">
+            <type by_reference="false">\$var</type>
+          </tag>
+        </docblock>
+        <argument line="280">
+          <name>$var</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <source>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</source>
+  </file>
+  <file path="OpauthStrategy.php" hash="efd871ffd29f35857d77eb704e0c23be" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file OpauthStrategy.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="12" package="Opauth\Strategy">
+      <name>OpauthStrategy</name>
+      <full_name>\OpauthStrategy</full_name>
+      <extends/>
+      <docblock line="2">
+        <description><![CDATA[Opauth Strategy
+Individual strategies are to be extended from this class]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="2" name="copyright" description="Copyright © 2012 U-Zyn Chua (http://uzyn.com)"/>
+        <tag line="2" name="link" description="http://opauth.org" link="http://opauth.org"/>
+        <tag line="2" name="package" description="Opauth.Strategy"/>
+        <tag line="2" name="license" description="MIT License"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="18" package="Default">
+        <name>$expects</name>
+        <default><![CDATA[]]></default>
+        <docblock line="14">
+          <description><![CDATA[Compulsory config keys, listed as unassociative arrays
+eg. array('app_id', 'app_secret');]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="24" package="Default">
+        <name>$defaults</name>
+        <default><![CDATA[]]></default>
+        <docblock line="20">
+          <description><![CDATA[Optional config keys with respective default values, listed as associative arrays
+eg. array('scope' => 'email');]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29" package="Default">
+        <name>$auth</name>
+        <default><![CDATA[]]></default>
+        <docblock line="26">
+          <description><![CDATA[Auth response array, containing results after successful authentication]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="34" package="Default">
+        <name>$name</name>
+        <default><![CDATA[null]]></default>
+        <docblock line="31">
+          <description><![CDATA[Name of strategy]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="39" package="Default">
+        <name>$Opauth</name>
+        <default><![CDATA[]]></default>
+        <docblock line="36">
+          <description><![CDATA[Pointer to Opauth instance]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="44" package="Default">
+        <name>$strategy</name>
+        <default><![CDATA[]]></default>
+        <docblock line="41">
+          <description><![CDATA[Configurations and settings unique to a particular strategy]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="52" package="">
+        <name>__construct</name>
+        <type>function</type>
+        <docblock line="46">
+          <description><![CDATA[Constructor]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="46" name="param" description="object Pointer to Opauth instance" type="\$Opauth" variable="$Opauth">
+            <type by_reference="false">\$Opauth</type>
+          </tag>
+          <tag line="46" name="param" description="array Strategy-specific configuration" type="\$strategy" variable="$strategy">
+            <type by_reference="false">\$strategy</type>
+          </tag>
+        </docblock>
+        <argument line="52">
+          <name>$Opauth</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="52">
+          <name>$strategy</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="97" package="">
+        <name>request</name>
+        <type>function</type>
+        <docblock line="93">
+          <description><![CDATA[Auth request
+aka Log in or Register]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="104" package="">
+        <name>callback</name>
+        <type>function</type>
+        <docblock line="100">
+          <description><![CDATA[Packs $auth nicely and send to callback_url, ships $auth either via GET, POST or session.]]></description>
+          <long-description><![CDATA[Set shipping transport via callback_transport config, default being session.]]></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="default" line="135" package="">
+        <name>errorCallback</name>
+        <type>function</type>
+        <docblock line="121">
+          <description><![CDATA[Error callback]]></description>
+          <long-description><![CDATA[More info: https://github.com/uzyn/opauth/wiki/Auth-response#wiki-error-response]]></long-description>
+          <tag line="121" name="param" description="Data on error to be sent back along with the callback $error = array( 'provider' // Provider name 'code' // Error code, can be int (HTTP status) or string (eg. access_denied) 'message' // User-friendly error message 'raw' // Actual detail on the error, as returned by the provider )" type="array" variable="$error">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="135">
+          <name>$error</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="160" package="">
+        <name>shipToCallback</name>
+        <type>function</type>
+        <docblock line="149">
+          <description><![CDATA[Send $data to callback_url using specified transport method]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="149" name="param" description="Data to be sent" type="array" variable="$data">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="149" name="param" description="Callback method, either 'get', 'post' or 'session' 'session': Default. Works best unless callback_url is on a different domain than Opauth 'post': Works cross-domain, but relies on availability of client-side JavaScript. 'get': Works cross-domain, but may be limited or corrupted by browser URL length limit (eg. IE8/IE9 has 2083-char limit)" type="string" variable="$transport">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="160">
+          <name>$data</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="160">
+          <name>$transport</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="184" package="">
+        <name>callAction</name>
+        <type>function</type>
+        <docblock line="178">
+          <description><![CDATA[Call an action from a defined strategy]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="178" name="param" description="string Action name to call" type="\$action" variable="$action">
+            <type by_reference="false">\$action</type>
+          </tag>
+          <tag line="178" name="param" description="string If an action is not defined in a strategy, calls $defaultAction" type="\$defaultAction" variable="$defaultAction">
+            <type by_reference="false">\$defaultAction</type>
+          </tag>
+        </docblock>
+        <argument line="184">
+          <name>$action</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="184">
+          <name>$defaultAction</name>
+          <default><![CDATA['request']]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="default" line="196" package="">
+        <name>expects</name>
+        <type>function</type>
+        <docblock line="189">
+          <description><![CDATA[Ensures that a compulsory value is set, throws an error if it's not set]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="189" name="param" description="string Expected configuration key" type="\$key" variable="$key">
+            <type by_reference="false">\$key</type>
+          </tag>
+          <tag line="189" name="param" description="string If value is set as $not, trigger E_USER_ERROR" type="\$not" variable="$not">
+            <type by_reference="false">\$not</type>
+          </tag>
+          <tag line="189" name="return" description="The loaded value" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="196">
+          <name>$key</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="196">
+          <name>$not</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="default" line="218" package="">
+        <name>optional</name>
+        <type>function</type>
+        <docblock line="211">
+          <description><![CDATA[Loads a default value into $strategy if the associated key is not found]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="211" name="param" description="string Configuration key to be loaded" type="\$key" variable="$key">
+            <type by_reference="false">\$key</type>
+          </tag>
+          <tag line="211" name="param" description="string Default value for the configuration key if none is set by the user" type="\$default" variable="$default">
+            <type by_reference="false">\$default</type>
+          </tag>
+          <tag line="211" name="return" description="The loaded value" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="218">
+          <name>$key</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="218">
+          <name>$default</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="default" line="233" package="">
+        <name>sign</name>
+        <type>function</type>
+        <docblock line="227">
+          <description><![CDATA[Security: Sign $auth before redirecting to callback_url]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="227" name="param" description="ISO 8601 formatted date" type="\$timestamp" variable="$timestamp">
+            <type by_reference="false">\$timestamp</type>
+          </tag>
+          <tag line="227" name="return" description="Resulting signature" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="233">
+          <name>$timestamp</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="259" package="">
+        <name>hash</name>
+        <type>function</type>
+        <docblock line="250">
+          <description><![CDATA[Static hashing funciton]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="250" name="param" description="Input string" type="string" variable="$input">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="250" name="param" description="ISO 8601 formatted date *" type="string" variable="$timestamp">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="250" name="param" description="Number of hash interations" type="int" variable="$iteration">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="250" name="param" description="" type="string" variable="$salt">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="250" name="return" description="Resulting hash" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="259">
+          <name>$input</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="259">
+          <name>$timestamp</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="259">
+          <name>$iteration</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="259">
+          <name>$salt</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="default" line="273" package="">
+        <name>redirect</name>
+        <type>function</type>
+        <docblock line="267">
+          <description><![CDATA[Redirect to $url with HTTP header (Location: )]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="267" name="param" description="string URL to redirect user to" type="\$url" variable="$url">
+            <type by_reference="false">\$url</type>
+          </tag>
+          <tag line="267" name="param" description="boolean Whether to call exit() right after redirection" type="\$exit" variable="$exit">
+            <type by_reference="false">\$exit</type>
+          </tag>
+        </docblock>
+        <argument line="273">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="273">
+          <name>$exit</name>
+          <default><![CDATA[true]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="default" line="284" package="">
+        <name>clientPost</name>
+        <type>function</type>
+        <docblock line="278">
+          <description><![CDATA[Generates a simple HTML form with $params initialized and post results via JavaScript]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="278" name="param" description="string URL to be POSTed" type="\$url" variable="$url">
+            <type by_reference="false">\$url</type>
+          </tag>
+          <tag line="278" name="param" description="array Data to be POSTed" type="\$params" variable="$params">
+            <type by_reference="false">\$params</type>
+          </tag>
+        </docblock>
+        <argument line="284">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="284">
+          <name>$params</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="default" line="310" package="">
+        <name>httpRequest</name>
+        <type>function</type>
+        <docblock line="300">
+          <description><![CDATA[Simple HTTP request with file_get_contents
+Provides basic HTTP calls.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="300" name="param" description="string Full URL to load" type="\$url" variable="$url">
+            <type by_reference="false">\$url</type>
+          </tag>
+          <tag line="300" name="param" description="array Stream context options (http://php.net/stream-context-create)" type="\$options" variable="$options">
+            <type by_reference="false">\$options</type>
+          </tag>
+          <tag line="300" name="param" description="string Response headers after HTTP call. Useful for error debugging." type="\$responseHeaders" variable="$responseHeaders">
+            <type by_reference="false">\$responseHeaders</type>
+          </tag>
+          <tag line="300" name="return" description="Content of destination, without headers" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="310">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="310">
+          <name>$options</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="310">
+          <name>$responseHeaders</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="default" line="329" package="">
+        <name>recursiveGetObjectVars</name>
+        <type>function</type>
+        <docblock line="322">
+          <description><![CDATA[Recursively converts object into array
+Basically get_object_vars, but recursive.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="322" name="param" description="Object" type="\$obj" variable="$obj">
+            <type by_reference="false">\$obj</type>
+          </tag>
+          <tag line="322" name="return" description="of object properties" type="Array">
+            <type by_reference="false">Array</type>
+          </tag>
+        </docblock>
+        <argument line="329">
+          <name>$obj</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="default" line="348" package="">
+        <name>flattenArray</name>
+        <type>function</type>
+        <docblock line="339">
+          <description><![CDATA[Recursively converts multidimensional array into POST-friendly single dimensional array]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="339" name="param" description="array Array to be flatten" type="\$array" variable="$array">
+            <type by_reference="false">\$array</type>
+          </tag>
+          <tag line="339" name="param" description="string String to be prefixed to flatenned variable name" type="\$prefix" variable="$prefix">
+            <type by_reference="false">\$prefix</type>
+          </tag>
+          <tag line="339" name="param" description="array Existing array of flattened inputs to be merged upon" type="\$results" variable="$results">
+            <type by_reference="false">\$results</type>
+          </tag>
+          <tag line="339" name="return" description="A single dimensional array with POST-friendly name" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="348">
+          <name>$array</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="348">
+          <name>$prefix</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="348">
+          <name>$results</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <source>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</source>
+  </file>
+  <package name="" full_name=""/>
+  <package name="Default" full_name="Default"/>
+  <package name="Opauth" full_name="Opauth">
+    <package name="Strategy" full_name="Opauth\Strategy"/>
+  </package>
+  <namespace name="default" full_name="default"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
