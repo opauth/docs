@@ -64,7 +64,6 @@ Application should redirect callback URL to application-side.</span><pre>callbac
 <li class="method public "><a href="#debug" title="debug :: Prints out variable with &lt;pre&gt; tags
 Silence if Opauth is not in debug mode"><span class="description">Prints out variable with &lt;pre&gt; tags
 Silence if Opauth is not in debug mode</span><pre>debug()</pre></a></li>
-<li class="method public "><a href="#envReplace" title="envReplace :: Replace defined env values enclused in {} with values from $dictionary"><span class="description">Replace defined env values enclused in {} with values from $dictionary</span><pre>envReplace()</pre></a></li>
 <li class="method public "><a href="#run" title="run :: Run Opauth:
 Parses request URI and perform defined authentication actions based based on it."><span class="description">Run Opauth:
 Parses request URI and perform defined authentication actions based based on it.</span><pre>run()</pre></a></li>
@@ -109,17 +108,17 @@ Multi-provider authentication framework for PHP</p>
 <a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
 <h2>Constructor
 Loads user configuration and strategies.</h2>
-<pre>__construct(\$config $config, \$run $run) </pre>
+<pre>__construct(array $config, boolean $run) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$config</h4>
-<code>\$config</code><p>array User configuration</p></div>
+<code>array</code><p>User configuration</p></div>
 <div class="subelement argument">
 <h4>$run</h4>
-<code>\$run</code><p>boolean Whether Opauth should auto run after initialization.</p></div>
+<code>boolean</code><p>Whether Opauth should auto run after initialization.</p></div>
 </div></div>
 </div>
 <a name="callback" id="callback"></a><div class="element clickable method public callback" data-toggle="collapse" data-target=".callback .collapse">
@@ -132,33 +131,14 @@ Application should redirect callback URL to application-side.</h2>
 <a name="debug" id="debug"></a><div class="element clickable method public debug" data-toggle="collapse" data-target=".debug .collapse">
 <h2>Prints out variable with &lt;pre&gt; tags
 Silence if Opauth is not in debug mode</h2>
-<pre>debug(\$var $var) </pre>
+<pre>debug(mixed $var) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$var</h4>
-<code>\$var</code><p>mixed Object or variable to be printed</p></div>
-</div></div>
-</div>
-<a name="envReplace" id="envReplace"></a><div class="element clickable method public envReplace" data-toggle="collapse" data-target=".envReplace .collapse">
-<h2>Replace defined env values enclused in {} with values from $dictionary</h2>
-<pre>envReplace(\$value $value, \$dictionary $dictionary) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<p class="long_description"></p>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$value</h4>
-<code>\$value</code><p>string Input string</p></div>
-<div class="subelement argument">
-<h4>$dictionary</h4>
-<code>\$dictionary</code><p>array Dictionary to lookup values from, defaulted to $this->env</p>
-</div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code>String substitued with value from dictionary, if applicable</div>
+<code>mixed</code><p>Object or variable to be printed</p></div>
 </div></div>
 </div>
 <a name="run" id="run"></a><div class="element clickable method public run" data-toggle="collapse" data-target=".run .collapse">
@@ -171,7 +151,7 @@ Parses request URI and perform defined authentication actions based based on it.
 <a name="validate" id="validate"></a><div class="element clickable method public validate" data-toggle="collapse" data-target=".validate .collapse">
 <h2>Validate $auth response
 Accepts either function call or HTTP-based call</h2>
-<pre>validate(string $input, string $timestamp, string $signature, \$reason $reason) : boolean</pre>
+<pre>validate(string $input, string $timestamp, string $signature, string $reason) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
@@ -190,7 +170,7 @@ Accepts either function call or HTTP-based call</h2>
 </div>
 <div class="subelement argument">
 <h4>$reason</h4>
-<code>\$reason</code><p>Sets reason for failure if validation fails</p></div>
+<code>string</code><p>Sets reason for failure if validation fails</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>boolean</code>true: valid; false: not valid.</div>
@@ -237,7 +217,7 @@ More info: https://github.com/uzyn/opauth/wiki/Opauth-configuration</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a3</a> and<br>
-            generated on 2012-05-19T15:34:16+08:00.<br></footer></div>
+            generated on 2012-05-20T21:34:45+08:00.<br></footer></div>
 </div>
 </body>
 </html>
