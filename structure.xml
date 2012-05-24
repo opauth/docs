@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a3" title="Opauth">
-  <file path="Opauth.php" hash="172e09d3a6a9e5230869d241d6ebc86e" package="Opauth">
+  <file path="Opauth.php" hash="c06ef208ed8965447e108b4090cdd738" package="Opauth">
     <docblock line="2">
       <description><![CDATA[Opauth
 Multi-provider authentication framework for PHP]]></description>
@@ -71,103 +71,123 @@ Loads user configuration and strategies.]]></description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="93" package="">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="95" package="">
         <name>run</name>
         <type>function</type>
-        <docblock line="89">
+        <docblock line="91">
           <description><![CDATA[Run Opauth:
 Parses request URI and perform defined authentication actions based based on it.]]></description>
           <long-description><![CDATA[]]></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="122" package="">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="127" package="">
         <name>parseUri</name>
         <type>function</type>
-        <docblock line="119">
+        <docblock line="124">
           <description><![CDATA[Parses Request URI]]></description>
           <long-description><![CDATA[]]></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="138" package="">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="143" package="">
         <name>loadStrategies</name>
         <type>function</type>
-        <docblock line="135">
+        <docblock line="140">
           <description><![CDATA[Load strategies from user-input $config]]></description>
           <long-description><![CDATA[]]></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="177" package="">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="182" package="">
         <name>validate</name>
         <type>function</type>
-        <docblock line="167">
+        <docblock line="172">
           <description><![CDATA[Validate $auth response
 Accepts either function call or HTTP-based call]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="167" name="param" description="= sha1(print_r($auth, true))" type="string" variable="$input">
+          <tag line="172" name="param" description="= sha1(print_r($auth, true))" type="string" variable="$input">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="167" name="param" description="= $_REQUEST['timestamp'])" type="string" variable="$timestamp">
+          <tag line="172" name="param" description="= $_REQUEST['timestamp'])" type="string" variable="$timestamp">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="167" name="param" description="= $_REQUEST['signature']" type="string" variable="$signature">
+          <tag line="172" name="param" description="= $_REQUEST['signature']" type="string" variable="$signature">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="167" name="param" description="Sets reason for failure if validation fails" type="string" variable="$reason">
+          <tag line="172" name="param" description="Sets reason for failure if validation fails" type="string" variable="$reason">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="167" name="return" description="true: valid; false: not valid." type="boolean">
+          <tag line="172" name="return" description="true: valid; false: not valid." type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="177">
+        <argument line="182">
           <name>$input</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="177">
+        <argument line="182">
           <name>$timestamp</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="177">
+        <argument line="182">
           <name>$signature</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="177">
+        <argument line="182">
           <name>$reason</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="207" package="">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="212" package="">
         <name>callback</name>
         <type>function</type>
-        <docblock line="202">
+        <docblock line="207">
           <description><![CDATA[Callback: prints out $auth values, and acts as a guide on Opauth security
 Application should redirect callback URL to application-side.]]></description>
           <long-description><![CDATA[Refer to example/callback.php on how to handle auth callback.]]></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="265" package="">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="default" line="270" package="">
+        <name>requireStrategy</name>
+        <type>function</type>
+        <docblock line="263">
+          <description><![CDATA[Loads a strategy, firstly check if the strategy's class already exists, especially for users of Composer;
+If it isn't, attempts to load it from $this->env['strategy_dir']]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="263" name="param" description="Name of a strategy" type="string" variable="$strategy">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="263" name="return" description="Class name of the strategy, usually StrategyStrategy" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="270">
+          <name>$strategy</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="297" package="">
         <name>debug</name>
         <type>function</type>
-        <docblock line="259">
+        <docblock line="291">
           <description><![CDATA[Prints out variable with <pre> tags
 Silence if Opauth is not in debug mode]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="259" name="param" description="Object or variable to be printed" type="mixed" variable="$var">
+          <tag line="291" name="param" description="Object or variable to be printed" type="mixed" variable="$var">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="265">
+        <argument line="297">
           <name>$var</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
     </class>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="OpauthStrategy.php" hash="48843b907bd5d513f97c9ca4cc4585f5" package="Opauth\Strategy">
     <docblock line="2">
