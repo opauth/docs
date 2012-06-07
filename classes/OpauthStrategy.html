@@ -58,6 +58,7 @@
 <li class="method public "><a href="#__construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#callAction" title="callAction :: Call an action from a defined strategy"><span class="description">Call an action from a defined strategy</span><pre>callAction()</pre></a></li>
 <li class="method public "><a href="#callback" title="callback :: Packs $auth nicely and send to callback_url, ships $auth either via GET, POST or session."><span class="description">Packs $auth nicely and send to callback_url, ships $auth either via GET, POST or session.</span><pre>callback()</pre></a></li>
+<li class="method public "><a href="#clientGet" title="clientGet :: Client-side GET: This function builds the full HTTP URL with parameters and redirects via Location header."><span class="description">Client-side GET: This function builds the full HTTP URL with parameters and redirects via Location header.</span><pre>clientGet()</pre></a></li>
 <li class="method public "><a href="#clientPost" title="clientPost :: Generates a simple HTML form with $data initialized and post results via JavaScript"><span class="description">Generates a simple HTML form with $data initialized and post results via JavaScript</span><pre>clientPost()</pre></a></li>
 <li class="method public "><a href="#envReplace" title="envReplace :: Replace defined env values enclused in {} with values from $dictionary"><span class="description">Replace defined env values enclused in {} with values from $dictionary</span><pre>envReplace()</pre></a></li>
 <li class="method public "><a href="#errorCallback" title="errorCallback :: Error callback"><span class="description">Error callback</span><pre>errorCallback()</pre></a></li>
@@ -154,6 +155,25 @@ Individual strategies are to be extended from this class</p>
 <pre>callback() </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><p class="long_description">Set shipping transport via callback_transport config, default being session.</p></div></div>
+</div>
+<a name="clientGet" id="clientGet"></a><div class="element clickable method public clientGet" data-toggle="collapse" data-target=".clientGet .collapse">
+<h2>Client-side GET: This function builds the full HTTP URL with parameters and redirects via Location header.</h2>
+<pre>clientGet(string $url, array $data, boolean $exit) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>Destination URL</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>Data</p></div>
+<div class="subelement argument">
+<h4>$exit</h4>
+<code>boolean</code><p>Whether to call exit() right after redirection</p>
+</div>
+</div></div>
 </div>
 <a name="clientPost" id="clientPost"></a><div class="element clickable method public clientPost" data-toggle="collapse" data-target=".clientPost .collapse">
 <h2>Generates a simple HTML form with $data initialized and post results via JavaScript</h2>
@@ -478,7 +498,7 @@ eg. array('app_id', 'app_secret');</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a3</a> and<br>
-            generated on 2012-05-24T12:39:08+08:00.<br></footer></div>
+            generated on 2012-06-07T18:26:40+08:00.<br></footer></div>
 </div>
 </body>
 </html>
