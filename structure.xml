@@ -190,7 +190,7 @@ Silence if Opauth is not in debug mode]]></description>
     </class>
     <source>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</source>
   </file>
-  <file path="OpauthStrategy.php" hash="d09878875edc96b3879bb7665fb83ff8" package="Opauth\Strategy">
+  <file path="OpauthStrategy.php" hash="b75e1748ae999d581ccd97d70faf0f7b" package="Opauth\Strategy">
     <docblock line="2">
       <description><![CDATA[Opauth Strategy
 Individual strategies are to be extended from this class]]></description>
@@ -438,219 +438,251 @@ aka Log in or Register]]></description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="260" package="">
-        <name>hash</name>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="default" line="251" package="">
+        <name>mapProfile</name>
         <type>function</type>
-        <docblock line="251">
-          <description><![CDATA[Static hashing funciton]]></description>
+        <docblock line="243">
+          <description><![CDATA[Maps user profile to auth response]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="251" name="param" description="Input string" type="string" variable="$input">
+          <tag line="243" name="param" description="User profile obtained from provider" type="array" variable="$profile">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="243" name="param" description="Path to a $profile property. Use dot(.) to separate levels. eg. Path to $profile['a']['b']['c'] would be 'a.b.c'" type="string" variable="$profile_path">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="251" name="param" description="ISO 8601 formatted date *" type="string" variable="$timestamp">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="251" name="param" description="Number of hash interations" type="int" variable="$iteration">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="251" name="param" description="" type="string" variable="$salt">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="251" name="return" description="Resulting hash" type="string">
+          <tag line="243" name="param" description="Path to $this-&gt;auth that is to be set." type="string" variable="$auth_path">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="260">
+        <argument line="251">
+          <name>$profile</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="251">
+          <name>$profile_path</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="251">
+          <name>$auth_path</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="289" package="">
+        <name>hash</name>
+        <type>function</type>
+        <docblock line="280">
+          <description><![CDATA[Static hashing funciton]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="280" name="param" description="Input string" type="string" variable="$input">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="280" name="param" description="ISO 8601 formatted date" type="string" variable="$timestamp">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="280" name="param" description="Number of hash interations" type="int" variable="$iteration">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="280" name="param" description="" type="string" variable="$salt">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="280" name="return" description="Resulting hash" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="289">
           <name>$input</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="260">
+        <argument line="289">
           <name>$timestamp</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="260">
+        <argument line="289">
           <name>$iteration</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="260">
+        <argument line="289">
           <name>$salt</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="274" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="303" package="">
         <name>redirect</name>
         <type>function</type>
-        <docblock line="268">
+        <docblock line="297">
           <description><![CDATA[Redirect to $url with HTTP header (Location: )]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="268" name="param" description="URL to redirect user to" type="string" variable="$url">
+          <tag line="297" name="param" description="URL to redirect user to" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="268" name="param" description="Whether to call exit() right after redirection" type="boolean" variable="$exit">
+          <tag line="297" name="param" description="Whether to call exit() right after redirection" type="boolean" variable="$exit">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="274">
+        <argument line="303">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="274">
+        <argument line="303">
           <name>$exit</name>
           <default><![CDATA[true]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="286" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="315" package="">
         <name>clientGet</name>
         <type>function</type>
-        <docblock line="279">
+        <docblock line="308">
           <description><![CDATA[Client-side GET: This function builds the full HTTP URL with parameters and redirects via Location header.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="279" name="param" description="Destination URL" type="string" variable="$url">
+          <tag line="308" name="param" description="Destination URL" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="279" name="param" description="Data" type="array" variable="$data">
+          <tag line="308" name="param" description="Data" type="array" variable="$data">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="279" name="param" description="Whether to call exit() right after redirection" type="boolean" variable="$exit">
+          <tag line="308" name="param" description="Whether to call exit() right after redirection" type="boolean" variable="$exit">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="286">
+        <argument line="315">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="286">
+        <argument line="315">
           <name>$data</name>
           <default><![CDATA[array()]]></default>
           <type/>
         </argument>
-        <argument line="286">
+        <argument line="315">
           <name>$exit</name>
           <default><![CDATA[true]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="296" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="325" package="">
         <name>clientPost</name>
         <type>function</type>
-        <docblock line="290">
+        <docblock line="319">
           <description><![CDATA[Generates a simple HTML form with $data initialized and post results via JavaScript]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="290" name="param" description="URL to be POSTed" type="string" variable="$url">
+          <tag line="319" name="param" description="URL to be POSTed" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="290" name="param" description="Data to be POSTed" type="array" variable="$data">
+          <tag line="319" name="param" description="Data to be POSTed" type="array" variable="$data">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="296">
+        <argument line="325">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="296">
+        <argument line="325">
           <name>$data</name>
           <default><![CDATA[array()]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="321" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="350" package="">
         <name>serverGet</name>
         <type>function</type>
-        <docblock line="312">
+        <docblock line="341">
           <description><![CDATA[Basic server-side HTTP GET request via self::httpRequest(), wrapper of file_get_contents]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="312" name="param" description="Destination URL" type="string" variable="$url">
+          <tag line="341" name="param" description="Destination URL" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="312" name="param" description="Data to be submitted via GET" type="array" variable="$data">
+          <tag line="341" name="param" description="Data to be submitted via GET" type="array" variable="$data">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="312" name="param" description="Additional stream context options, if any" type="array" variable="$options">
+          <tag line="341" name="param" description="Additional stream context options, if any" type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="312" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
+          <tag line="341" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="312" name="return" description="Content resulted from request, without headers" type="string">
+          <tag line="341" name="return" description="Content resulted from request, without headers" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="321">
+        <argument line="350">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="321">
+        <argument line="350">
           <name>$data</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="321">
+        <argument line="350">
           <name>$options</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="321">
+        <argument line="350">
           <name>$responseHeaders</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="334" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="363" package="">
         <name>serverPost</name>
         <type>function</type>
-        <docblock line="325">
+        <docblock line="354">
           <description><![CDATA[Basic server-side HTTP POST request via self::httpRequest(), wrapper of file_get_contents]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="325" name="param" description="Destination URL" type="string" variable="$url">
+          <tag line="354" name="param" description="Destination URL" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="325" name="param" description="Data to be POSTed" type="array" variable="$data">
+          <tag line="354" name="param" description="Data to be POSTed" type="array" variable="$data">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="325" name="param" description="Additional stream context options, if any" type="array" variable="$options">
+          <tag line="354" name="param" description="Additional stream context options, if any" type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="325" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
+          <tag line="354" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="325" name="return" description="Content resulted from request, without headers" type="string">
+          <tag line="354" name="return" description="Content resulted from request, without headers" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="334">
+        <argument line="363">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="334">
+        <argument line="363">
           <name>$data</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="334">
+        <argument line="363">
           <name>$options</name>
           <default><![CDATA[array()]]></default>
           <type/>
         </argument>
-        <argument line="334">
+        <argument line="363">
           <name>$responseHeaders</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="365" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="394" package="">
         <name>httpRequest</name>
         <type>function</type>
-        <docblock line="350">
+        <docblock line="379">
           <description><![CDATA[Simple server-side HTTP request with file_get_contents
 Provides basic HTTP calls.]]></description>
           <long-description><![CDATA[See serverGet() and serverPost() for wrapper functions of httpRequest()
@@ -659,119 +691,119 @@ Notes:
 Reluctant to use any more advanced transport like cURL for the time being to not
     having to set cURL as being a requirement.
 Strategy is to provide own HTTP transport handler if requiring more advanced support.]]></long-description>
-          <tag line="350" name="param" description="Full URL to load" type="string" variable="$url">
+          <tag line="379" name="param" description="Full URL to load" type="string" variable="$url">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="350" name="param" description="Stream context options (http://php.net/stream-context-create)" type="array" variable="$options">
+          <tag line="379" name="param" description="Stream context options (http://php.net/stream-context-create)" type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="350" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
+          <tag line="379" name="param" description="Response headers after HTTP call. Useful for error debugging." type="string" variable="$responseHeaders">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="350" name="return" description="Content resulted from request, without headers" type="string">
+          <tag line="379" name="return" description="Content resulted from request, without headers" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="365">
+        <argument line="394">
           <name>$url</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="365">
+        <argument line="394">
           <name>$options</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="365">
+        <argument line="394">
           <name>$responseHeaders</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="384" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="413" package="">
         <name>recursiveGetObjectVars</name>
         <type>function</type>
-        <docblock line="377">
+        <docblock line="406">
           <description><![CDATA[Recursively converts object into array
 Basically get_object_vars, but recursive.]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="377" name="param" description="Object" type="mixed" variable="$obj">
+          <tag line="406" name="param" description="Object" type="mixed" variable="$obj">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="377" name="return" description="Array of object properties" type="array">
+          <tag line="406" name="return" description="Array of object properties" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="384">
+        <argument line="413">
           <name>$obj</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="407" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="438" package="">
         <name>flattenArray</name>
         <type>function</type>
-        <docblock line="398">
+        <docblock line="429">
           <description><![CDATA[Recursively converts multidimensional array into POST-friendly single dimensional array]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="398" name="param" description="Array to be flatten" type="array" variable="$array">
+          <tag line="429" name="param" description="Array to be flatten" type="array" variable="$array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="398" name="param" description="String to be prefixed to flatenned variable name" type="string" variable="$prefix">
+          <tag line="429" name="param" description="String to be prefixed to flatenned variable name" type="string" variable="$prefix">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="398" name="param" description="Existing array of flattened inputs to be merged upon" type="array" variable="$results">
+          <tag line="429" name="param" description="Existing array of flattened inputs to be merged upon" type="array" variable="$results">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="398" name="return" description="A single dimensional array with POST-friendly name" type="array">
+          <tag line="429" name="return" description="A single dimensional array with POST-friendly name" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="407">
+        <argument line="438">
           <name>$array</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="407">
+        <argument line="438">
           <name>$prefix</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
-        <argument line="407">
+        <argument line="438">
           <name>$results</name>
           <default><![CDATA[array()]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="431" package="">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="default" line="462" package="">
         <name>envReplace</name>
         <type>function</type>
-        <docblock line="424">
+        <docblock line="455">
           <description><![CDATA[Replace defined env values enclused in {} with values from $dictionary]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="424" name="param" description="Input string" type="string" variable="$value">
+          <tag line="455" name="param" description="Input string" type="string" variable="$value">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="424" name="param" description="Dictionary to lookup values from" type="array" variable="$dictionary">
+          <tag line="455" name="param" description="Dictionary to lookup values from" type="array" variable="$dictionary">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="424" name="return" description="String substitued with value from dictionary, if applicable" type="string">
+          <tag line="455" name="return" description="String substitued with value from dictionary, if applicable" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="431">
+        <argument line="462">
           <name>$value</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="431">
+        <argument line="462">
           <name>$dictionary</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
     </class>
-    <source>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</source>
+    <source>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</source>
   </file>
   <package name="" full_name=""/>
   <package name="Default" full_name="Default"/>

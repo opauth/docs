@@ -78,6 +78,7 @@ aka Log in or Register</span><pre>request()</pre></a></li>
 <li class="method public "><a href="#serverPost" title="serverPost :: Basic server-side HTTP POST request via self::httpRequest(), wrapper of file_get_contents"><span class="description">Basic server-side HTTP POST request via self::httpRequest(), wrapper of file_get_contents</span><pre>serverPost()</pre></a></li>
 <li class="nav-header protected">» Protected</li>
 <li class="method protected "><a href="#expects" title="expects :: Ensures that a compulsory value is set, throws an error if it's not set"><span class="description">Ensures that a compulsory value is set, throws an error if it's not set</span><pre>expects()</pre></a></li>
+<li class="method protected "><a href="#mapProfile" title="mapProfile :: Maps user profile to auth response"><span class="description">Maps user profile to auth response</span><pre>mapProfile()</pre></a></li>
 <li class="method protected "><a href="#optional" title="optional :: Loads a default value into $strategy if the associated key is not found"><span class="description">Loads a default value into $strategy if the associated key is not found</span><pre>optional()</pre></a></li>
 <li class="method protected "><a href="#sign" title="sign :: Security: Sign $auth before redirecting to callback_url"><span class="description">Security: Sign $auth before redirecting to callback_url</span><pre>sign()</pre></a></li>
 <li class="nav-header private">» Private</li>
@@ -254,8 +255,7 @@ Individual strategies are to be extended from this class</p>
 <code>string</code><p>Input string</p></div>
 <div class="subelement argument">
 <h4>$timestamp</h4>
-<code>string</code><p>ISO 8601 formatted date *</p>
-</div>
+<code>string</code><p>ISO 8601 formatted date</p></div>
 <div class="subelement argument">
 <h4>$iteration</h4>
 <code>int</code><p>Number of hash interations</p></div>
@@ -402,6 +402,26 @@ aka Log in or Register</h2>
 <code>mixed</code>The loaded value</div>
 </div></div>
 </div>
+<a name="mapProfile" id="mapProfile"></a><div class="element clickable method protected mapProfile" data-toggle="collapse" data-target=".mapProfile .collapse">
+<h2>Maps user profile to auth response</h2>
+<pre>mapProfile(array $profile, string $profile_path, string $auth_path) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$profile</h4>
+<code>array</code><p>User profile obtained from provider</p></div>
+<div class="subelement argument">
+<h4>$profile_path</h4>
+<code>string</code><p>Path to a $profile property. Use dot(.) to separate levels. eg. Path to $profile['a']['b']['c'] would be 'a.b.c'</p>
+</div>
+<div class="subelement argument">
+<h4>$auth_path</h4>
+<code>string</code><p>Path to $this->auth that is to be set.</p>
+</div>
+</div></div>
+</div>
 <a name="optional" id="optional"></a><div class="element clickable method protected optional" data-toggle="collapse" data-target=".optional .collapse">
 <h2>Loads a default value into $strategy if the associated key is not found</h2>
 <pre>optional(string $key, string $default) : mixed</pre>
@@ -498,7 +518,7 @@ eg. array('app_id', 'app_secret');</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a3</a> and<br>
-            generated on 2012-06-07T18:26:40+08:00.<br></footer></div>
+            generated on 2012-06-10T03:23:53+08:00.<br></footer></div>
 </div>
 </body>
 </html>
