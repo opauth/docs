@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Opauth\Response
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+    <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                            <li><a>Namespaces</a></li>
+                                                                <li><a href="../namespaces/Opauth.html">Opauth</a></li>
+                                                                                                                </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graph_class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../errors.html"><i class="icon-list-alt"></i>&#160;Errors</a></li>
+                            <li><a href="../markers.html"><i class="icon-list-alt"></i>&#160;Markers</a></li>
+                            <li><a href="../deprecated.html"><i class="icon-list-alt"></i>&#160;Deprecated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go_to_top">
+        <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+    </div>
+</div>
+
+<div id="___" class="container">
+    <noscript>
+        <div class="alert alert-warning">
+            Javascript is disabled; several features are only available if Javascript is enabled.
+        </div>
+    </noscript>
+
+        
+    <div class="row">
+        <div class="span4">
+                    <span class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </span>
+    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: ">
+            <span class="description"></span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isError" title="isError :: Check if the response has an error">
+            <span class="description">Check if the response has an error</span><pre>isError</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_errorMessage" title="errorMessage :: Get the error message">
+            <span class="description">Get the error message</span><pre>errorMessage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_errorCode" title="errorCode :: Gets error code">
+            <span class="description">Gets error code</span><pre>errorCode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setError" title="setError :: Sets an error">
+            <span class="description">Sets an error</span><pre>setError</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_isValid" title="isValid :: Checks if required parameters are set">
+            <span class="description">Checks if required parameters are set</span><pre>isValid</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setData" title="setData :: Copies raw data to other attribute.">
+            <span class="description">Copies raw data to other attribute.</span><pre>setData</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setMap" title="setMap :: Set data map, array of &#039;path&#039; =&gt; &#039;rawPath&#039; key/value pairs
+See also setData()">
+            <span class="description">Set data map, array of &#039;path&#039; =&gt; &#039;rawPath&#039; key/value pairs
+See also setData()</span><pre>setMap</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMap" title="getMap :: ">
+            <span class="description"></span><pre>getMap</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_map" title="map :: Sets attribute data based on data mapping
+Use setMap() to set the data mapping">
+            <span class="description">Sets attribute data based on data mapping
+Use setMap() to set the data mapping</span><pre>map</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_offsetGet" title="offsetGet :: Array access read implementation, magic getter for raw data">
+            <span class="description">Array access read implementation, magic getter for raw data</span><pre>offsetGet</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_offsetSet" title="offsetSet :: Array access write implementation">
+            <span class="description">Array access write implementation</span><pre>offsetSet</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_offsetExists" title="offsetExists :: Array access isset() implementation">
+            <span class="description">Array access isset() implementation</span><pre>offsetExists</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_offsetUnset" title="offsetUnset :: Array access unset() implementation">
+            <span class="description">Array access unset() implementation</span><pre>offsetUnset</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___get" title="__get :: Magic getter for raw data, like arrayaccess">
+            <span class="description">Magic getter for raw data, like arrayaccess</span><pre>__get</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___isset" title="__isset :: ">
+            <span class="description"></span><pre>__isset</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected">
+                            <a href="#method_getRaw" title="getRaw :: Gets the raw data value through path">
+                                <span class="description">Gets the raw data value through path</span><pre>getRaw</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_mergeValue" title="mergeValue :: Merges a value into a property">
+                                <span class="description">Merges a value into a property</span><pre>mergeValue</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Response</h1>
+                <small style="display: block; text-align: right">
+                                                                Implements \ArrayAccess
+                                    </small>
+                <p class="short_description">Opauth Response
+Individual strategies should return this in their callback() method</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                <p>Opauth</p>
+
+                                    </td>
+                                </tr>
+                                                                        </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                            <a id="method___construct"></a>
+                        <div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>__construct</h2>
+                            <pre>__construct(string $provider, array $raw) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$provider</h4>
+                                                <code>string</code><p><p>Use $this->strategy['provider'] so aliassed strategies are handled correct</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$raw</h4>
+                                                <code>array</code><p><p>Raw response data from provider</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isError"></a>
+                        <div class="element clickable method public method_isError" data-toggle="collapse" data-target=".method_isError .collapse">
+                            <h2>Check if the response has an error</h2>
+                            <pre>isError() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_errorMessage"></a>
+                        <div class="element clickable method public method_errorMessage" data-toggle="collapse" data-target=".method_errorMessage .collapse">
+                            <h2>Get the error message</h2>
+                            <pre>errorMessage() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_errorCode"></a>
+                        <div class="element clickable method public method_errorCode" data-toggle="collapse" data-target=".method_errorCode .collapse">
+                            <h2>Gets error code</h2>
+                            <pre>errorCode() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setError"></a>
+                        <div class="element clickable method public method_setError" data-toggle="collapse" data-target=".method_setError .collapse">
+                            <h2>Sets an error</h2>
+                            <pre>setError(array $error) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$error</h4>
+                                                <code>array</code><p><p>Array with code and message keys</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isValid"></a>
+                        <div class="element clickable method public method_isValid" data-toggle="collapse" data-target=".method_isValid .collapse">
+                            <h2>Checks if required parameters are set</h2>
+                            <pre>isValid() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setData"></a>
+                        <div class="element clickable method public method_setData" data-toggle="collapse" data-target=".method_setData .collapse">
+                            <h2>Copies raw data to other attribute.</h2>
+                            <pre>setData(string $path, string $rawPath) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Uses paths to data, Use dot(.) to separate levels
+Examples:
+- Path to $response->info['a']['b']['c'] would be 'info.a.b.c'
+- setData('info.nickname', 'screen_name') sets value from $response->raw['screen_name'] to $response->info['nickname']
+- setData('uid', 'nested.user_id') sets value from $response->raw['nested']['userid'] to $response->uid</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>Path to property. eg 'info.nickname' sets to $info['nickname']</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rawPath</h4>
+                                                <code>string</code><p><p>Path to a $raw data. eg 'screen_name' reads from $raw['screen_name']</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setMap"></a>
+                        <div class="element clickable method public method_setMap" data-toggle="collapse" data-target=".method_setMap .collapse">
+                            <h2>Set data map, array of &#039;path&#039; =&gt; &#039;rawPath&#039; key/value pairs
+See also setData()</h2>
+                            <pre>setMap(array $map = array()) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$map</h4>
+                                                <code>array</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMap"></a>
+                        <div class="element clickable method public method_getMap" data-toggle="collapse" data-target=".method_getMap .collapse">
+                            <h2>getMap</h2>
+                            <pre>getMap() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_map"></a>
+                        <div class="element clickable method public method_map" data-toggle="collapse" data-target=".method_map .collapse">
+                            <h2>Sets attribute data based on data mapping
+Use setMap() to set the data mapping</h2>
+                            <pre>map() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getRaw"></a>
+                        <div class="element clickable method protected method_getRaw" data-toggle="collapse" data-target=".method_getRaw .collapse">
+                            <h2>Gets the raw data value through path</h2>
+                            <pre>getRaw(\Opauth\type $path) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>\Opauth\type</code><p><p>see setData()</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_mergeValue"></a>
+                        <div class="element clickable method protected method_mergeValue" data-toggle="collapse" data-target=".method_mergeValue .collapse">
+                            <h2>Merges a value into a property</h2>
+                            <pre>mergeValue(\Opauth\type $path, \Opauth\type $value) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>\Opauth\type</code><p><p>path to Property see setData()</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>\Opauth\type</code><p><p>value to set</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_offsetGet"></a>
+                        <div class="element clickable method public method_offsetGet" data-toggle="collapse" data-target=".method_offsetGet .collapse">
+                            <h2>Array access read implementation, magic getter for raw data</h2>
+                            <pre>offsetGet(string $name) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>Name of the key being accessed.</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_offsetSet"></a>
+                        <div class="element clickable method public method_offsetSet" data-toggle="collapse" data-target=".method_offsetSet .collapse">
+                            <h2>Array access write implementation</h2>
+                            <pre>offsetSet(string $name, mixed $value) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>Name of the key being written</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The value being written.</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_offsetExists"></a>
+                        <div class="element clickable method public method_offsetExists" data-toggle="collapse" data-target=".method_offsetExists .collapse">
+                            <h2>Array access isset() implementation</h2>
+                            <pre>offsetExists(string $name) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>thing to check.</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_offsetUnset"></a>
+                        <div class="element clickable method public method_offsetUnset" data-toggle="collapse" data-target=".method_offsetUnset .collapse">
+                            <h2>Array access unset() implementation</h2>
+                            <pre>offsetUnset(string $name) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>Name to unset.</p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___get"></a>
+                        <div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+                            <h2>Magic getter for raw data, like arrayaccess</h2>
+                            <pre>__get(\Opauth\type $name) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>\Opauth\type</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___isset"></a>
+                        <div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse">
+                            <h2>__isset</h2>
+                            <pre>__isset(\Opauth\type $name) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>\Opauth\type</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                            <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_provider"> </a>
+                            <div class="element clickable property public property_provider" data-toggle="collapse" data-target=".property_provider .collapse">
+                                <h2>provider</h2>
+                                <pre>provider</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_raw"> </a>
+                            <div class="element clickable property public property_raw" data-toggle="collapse" data-target=".property_raw .collapse">
+                                <h2>raw</h2>
+                                <pre>raw</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_uid"> </a>
+                            <div class="element clickable property public property_uid" data-toggle="collapse" data-target=".property_uid .collapse">
+                                <h2>uid</h2>
+                                <pre>uid</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_name"> </a>
+                            <div class="element clickable property public property_name" data-toggle="collapse" data-target=".property_name .collapse">
+                                <h2>name</h2>
+                                <pre>name</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_credentials"> </a>
+                            <div class="element clickable property public property_credentials" data-toggle="collapse" data-target=".property_credentials .collapse">
+                                <h2>credentials</h2>
+                                <pre>credentials</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_info"> </a>
+                            <div class="element clickable property public property_info" data-toggle="collapse" data-target=".property_info .collapse">
+                                <h2>Info</h2>
+                                <pre>info</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_map"> </a>
+                            <div class="element clickable property protected property_map" data-toggle="collapse" data-target=".property_map .collapse">
+                                <h2>Key =&gt; value pairs to map raw data</h2>
+                                <pre>map</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Key contains dot formatted path to Response attributes,
+values contain path to raw data to read from.</p>
+
+<p>Strategies can define a response map, or users can add 'responseMap' to
+the config array, to override and define the way they like the response
+data to be formatted</p>
+
+<p>Example:
+protected $responseMap = array(
+    'uid' => 'id',
+    'name' => 'name',
+    'info.name' => 'name',
+    'info.nickname' => 'screen_name',
+    'info.location' => 'location',
+    'info.description' => 'description',
+    'info.image' => 'profile_image_url',
+    'info.urls.website' => 'url'
+);</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_error"> </a>
+                            <div class="element clickable property protected property_error" data-toggle="collapse" data-target=".property_error .collapse">
+                                <h2>Contains array with error code and message</h2>
+                                <pre>error</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Opauth\Response"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/Opauth.html">Opauth</a>
+    </li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Opauth.Response.html">Response</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer class="span12">
+    Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+    <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+    generated on Mon, 24 Jun 2013 18:02:19 +0200.<br/>
+</footer>
+</body>
+</html>
