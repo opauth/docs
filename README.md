@@ -8,8 +8,8 @@ Documentation is generated correct to the version of [Opauth][1] submoduled in t
 If you are looking for non-API documentation (how to use Opauth), check out the following:
 
 - [opauth.org](http://opauth.org/)
-- [Opauth's wiki](https://github.com/uzyn/opauth/wiki)
-- [Opauth on GitHub](https://github.com/uzyn/opauth/)
+- [Opauth's wiki](https://github.com/opauth/opauth/wiki)
+- [Opauth on GitHub](https://github.com/opauth/opauth/)
 
 About Opauth
 ------------
